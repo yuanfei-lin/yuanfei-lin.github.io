@@ -25,6 +25,7 @@
 
               <p style="text-align:center">
                 <a href="mailto:yuanfei.lin@tum.de">Email</a> &nbsp/&nbsp
+                <a href="https://www.in.tum.de/i06/people/yuanfei-lin-msc/">TUM Page</a> &nbsp/&nbsp
                 <a href="data/Yuanfei-CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=FZwqkmkAAAAJ&hl=en&oi=sra">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/yuanfei-lin-6a2791171">LinkedIn</a> &nbsp/&nbsp
@@ -58,6 +59,45 @@
 
 
           <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='rule_repair'>
+                  <img src='images/rule_rep1.png' width="160"></div>
+                <img src='images/rule_rep2.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfactor_start() {
+                  document.getElementById('rule_repair').style.opacity = "1";
+                }
+
+                function nerfactor_stop() {
+                  document.getElementById('rule_repair').style.opacity = "0";
+                }
+                nerfactor_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+              <papertitle><a href="https://mediatum.ub.tum.de/doc/1657306">Rule-Compliant Trajectory Repairing using Satisfiability Modulo Theories</a>
+                </papertitle>
+              </a>
+              <br>
+              <strong>Yuanfei Lin*</strong>,
+              <a href="https://www.in.tum.de/i06/people/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
+              <br>
+              <em>ITSC</em>, 2021 
+              <br>
+              <a href="https://mediatum.ub.tum.de/export/1657306/bibtex">BibTex</a>
+              /
+              <a href="https://mediatum.ub.tum.de/doc/1657306">VollText</a>
+              /
+              <a href="https://www.youtube.com/watch?v=rOJsEGE4I3c&t=1s">Video</a>
+              /
+              <a href="data/iv22-poster.pdf">Poster</a>
+              <p></p>
+              <p>Autonomous vehicles must comply with traffic rules. However, most motion planners do not explicitly consider all relevant traffic rules. Once traffic rule violations of an initially-planned trajectory are detected, there is often not enough time to replan the entire trajectory. </p>
+            </td>
+            
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='repair_image'>
@@ -190,7 +230,7 @@
         <!-- footer -->
         <div class="container">
           <p align="right">
-            &nbsp;&nbsp;&nbsp;Updated Oct. 2021</p>
+            &nbsp;&nbsp;&nbsp;Updated Mai. 2022</p>
           <p></p>
           <p align="right">
             <a href="https://jonbarron.info/">Source</a>
