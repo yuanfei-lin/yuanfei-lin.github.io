@@ -51,6 +51,48 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+		
+          <tr onmouseout="mpr_stop()" onmouseover="mpr_start()">
+	   <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mpr_img'>
+                  <img src='images/mpr-before.png' width="160"></div>
+                <img src='images/mpf-after.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mpr_start() {
+                  document.getElementById('mpr_img').style.opacity = "1";
+                }
+
+                function mpr_stop() {
+                  document.getElementById('mpr_img').style.opacity = "0";
+                }
+                nerfactor_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+              <papertitle><a href="https://arxiv.org/pdf/2209.07881.pdf">Model Predictive Robustness of Signal Temporal Logic Predicates</a>
+                </papertitle>
+              </a>
+              <br>
+              <strong>Yuanfei Lin*</strong>,
+              <a">Haoxuan Li</a>,
+              <a href="https://www.in.tum.de/i06/people/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
+              <br>
+              <em>ArXiv</em>, 2022
+              <br>
+              <a href="https://arxiv.org/pdf/2209.07881.pdf">VollText</a>
+              /
+              <a href="https://www.youtube.com/watch?v=ZzxzRgUJHCw&list=PLe3EglO5SzTcozbowmHSeccD4Izgqu2Eq">Video</a>
+              <p></p>
+              <p>The robustness of signal temporal logic not only assesses whether
+		a signal adheres to a specification but also provides a measure of how much a formula is fulfilled or
+		violated. However, the robustness of predicates is usually defined in a model-free way, i.e.,
+		without including the system dynamics.</p>
+            </td>
+          </tr> 
+		
           <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
