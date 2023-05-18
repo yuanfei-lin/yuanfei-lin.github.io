@@ -56,7 +56,47 @@
     </tbody>
 </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                    <tr onmouseout="crime_stop()" onmouseover="crime_start()">
+		
+          <tr onmouseout="converter_stop()" onmouseover="converter_start()">
+	   <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='converter_img'>
+                  <img src='images/openscenario.png' width="160"></div>
+                <img src='images/commonroad.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mpr_start() {
+                  document.getElementById('converter_img').style.opacity = "1";
+                }
+
+                function mpr_stop() {
+                  document.getElementById('converter_img').style.opacity = "0";
+                }
+                nerfactor_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a>
+              <papertitle><a href="https://arxiv.org/pdf/2305.10080.pdf">Automatic Traffic Scenario Conversion from OpenSCENARIO to CommonRoad</a>
+                </papertitle>
+              </a>
+              <br>
+              <strong>Yuanfei Lin*</strong>,
+              <a">Michael Ratzel</a>,
+              <a href="https://www.ce.cit.tum.de/air/people/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
+              <br>
+              <em>ArXiv</em>, 2023
+              <br>
+              <a href="https://arxiv.org/pdf/2305.10080.pdf">VollText</a>
+              /
+              <a href="https://commonroad.in.tum.de/tools/openscenario-converter">Tool Page</a>
+              <p></p>
+              <p>Scenarios are a crucial element for developing, testing, and verifying autonomous driving systems. 
+		However, open-source scenarios are often formulated using different terminologies.</p>
+            </td>
+          </tr> 
+													   
+          <tr onmouseout="crime_stop()" onmouseover="crime_start()">
 	   <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='crime_img'>
@@ -127,8 +167,6 @@
               <em>ArXiv</em>, 2023
               <br>
               <a href="https://arxiv.org/pdf/2209.07881v2.pdf">VollText</a>
-              /
-              <a href="https://www.youtube.com/watch?v=ZzxzRgUJHCw&list=PLe3EglO5SzTcozbowmHSeccD4Izgqu2Eq">Video</a>
               <p></p>
               <p>The robustness of signal temporal logic not only assesses whether
 		a signal adheres to a specification but also provides a measure of how much a formula is fulfilled or
