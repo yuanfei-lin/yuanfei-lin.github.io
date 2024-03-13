@@ -56,7 +56,53 @@
     </tbody>
 </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	
+	<tr onmouseout="drplanner_stop()" onmouseover="drplanner_start()">
+	   <td style="padding:20px;width:25%;vertical-align:center">
+              <div class="one">
+                <div class="two" id='mpr_img'>
+                  <img src='images/drplanner-before.gif' width="160"></div>
+                <img src='images/drplanner-after.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function drplanner_start() {
+                  document.getElementById('drplanner_img').style.opacity = "1";
+                }
+
+                function drplanner_stop() {
+                  document.getElementById('drplanner_img').style.opacity = "0";
+                }
+                nerfactor_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:center">
+              <a>
+              <papertitle><a href="https://arxiv.org/abs/2403.07470">DrPlanner 🩺: Diagnosis and Repair of Motion Planners Using Large Language Models</a>
+                </papertitle>
+              </a>
+              <br>
+              <strong>Yuanfei Lin*</strong>,
+	     <a href="https://scholar.google.com/citations?user=O_PbKNMAAAAJ&hl=zh-CN">Chenran Li</a>,
+              <a href="https://dingmyu.github.io">Mingyu Ding</a>,
+	      <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Masayoshi Tomizuka</a>,
+              <a href="https://zhanwei.site/">Wei Zhan</a>,
+              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
+              <br>
+              <em>ArXiv</em>, 2024
+              <br>
+		<a href="https://commonroad.github.io/drplanner/">Project Page</a>
+              /
+              <a href="https://arxiv.org/pdf/2403.07470.pdf">VollText</a>
+	      /
+	      <a href="https://www.youtube.com/watch?v=9r1-S2w9G5E">Video</a>
+              <p></p>
+              <p>Motion planners are essential for the safe opera-
+tion of automated vehicles across various scenarios. However,
+no motion planning algorithm has achieved perfection in
+the literature, and improving its performance is often time-
+consuming and labor-intensive.</p>
+            </td>
+          </tr> 
+		
 	<tr onmouseout="mpr_stop()" onmouseover="mpr_start()">
 	   <td style="padding:20px;width:25%;vertical-align:center">
               <div class="one">
