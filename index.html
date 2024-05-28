@@ -1,82 +1,133 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-  <title>Yuanfei Lin</title>
-  
-  <meta name="author" content="Jon Barron">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/vehicle_icon.png">
-</head>
+<html>
+  <head>
 
-<body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Yuanfei Lin</name>
-              </p>
-              <p>Hello! I am currently working toward the Ph.D. degree in the <a href="https://www.ce.cit.tum.de/cps/">Cyber Physical Systems</a> group, <a href="https://www.cit.tum.de/cit/startseite/"> School of Computation, Information and Technology </a>,  <a href="https://www.tum.de/en/">Technical University of Munich</a>. Prior to that, I graduated with the double Master degree in Mechanical Engineering and Mechatronics and Robotics both with high distinction from the same university in 2020. I received the Bachelor degree in Automotive Engineering with Excellent Graduate honor from <a href="https://en.tongji.edu.cn/">Tongji University</a> in 2018.
-              </p>
+    <!-- Title -->
+    <title>Yuanfei Lin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1000">
 
-              <p style="text-align:center">
-                <a href="mailto:yuanfei.lin@tum.de">Email</a> &nbsp/&nbsp
-                <a href="https://www.ce.cit.tum.de/cps/members/yuanfei-lin-msc/">TUM Page</a> &nbsp/&nbsp
-                <a href="data/Yuanfei-CV.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=FZwqkmkAAAAJ&hl=en&oi=sra">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/yuanfei-lin-6a2791171">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://github.com/yuanfei-lin">Github</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/profile.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_circle.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle;line-height:20px">
-              <heading>Research Interests</heading>
-              <p>
-                I'm broadly interested in applying formal methods and machine learning technologies to motion planning algorithms for autonomous vehicles to increase their safety, liability, and efficiency. 
-             <p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	 <tr onmouseout="cr2aw_stop()" onmouseover="cr2aw_start()">
-	   <td style="padding:20px;width:25%;vertical-align:center">
-              <div class="one">
-                <div class="two" id='cr2aw_img'>
-                  <img src='images/cr2aw.gif' width="160"></div>
-                <img src='images/cr2aw.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function cr2aw_start() {
-                  document.getElementById('cr2aw_img').style.opacity = "0";
-                }
+    <!-- Isotope JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-                function cr2aw_stop() {
-                  document.getElementById('cr2aw_img').style.opacity = "1";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:center">
-              <a href="https://mediatum.ub.tum.de/doc/1740269/h9fhalm4tfqbb9abjpd33gwpc.pdf">
-	       <strong><span class="papertitle">Simplifying Sim-to-Real Transfer in Autonomous Driving: Coupling Autoware with the CommonRoad Motion Planning Framework</span></strong>
-              </a>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+  </head>
+
+  <body id="body">
+
+    <div id="main">
+      <div id="intro">
+        <div id="intro-text">
+          <span class="container">
+            <p class="text">Yuanfei Lin</p>
+            <img src="images/sig.jpg" width="220" height="120"/>
+          </span>
+                    <!-- <div><h1>Yuanfei Lin</h1></div> -->
+          <p>
+            Hi there! I'm a fourth-year PhD student at the <a href="https://www.tum.de/en/">Technical University of Munich</a> under the supervision of <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Prof. Dr.-Ing Matthias Althoff</a>, where I enjoy making safe autonomous driving possible. My research focuses on applying formal methods to autonomous systems to enable safe and reliable operation in complex and dynamic environments. Recently, I have become interested in combining large language models with motion planning techniques.
+            <div id="more-bio" style="display: None">
               <br>
-	      <a href="https://www.ce.cit.tum.de/cps/members/gerald-wuersching-msc/">Gerald Würsching</a>,
+              <p>I am currently working toward the Ph.D. degree in the <a href="https://www.ce.cit.tum.de/cps/">Cyber Physical Systems</a> group, <a href="https://www.cit.tum.de/cit/startseite/"> School of Computation, Information and Technology </a>,  <a href="https://www.tum.de/en/">Technical University of Munich</a>. Prior to that, I graduated with the double Master degree in Mechanical Engineering and Mechatronics and Robotics both with high distinction from the same university in 2020. I received the Bachelor degree in Automotive Engineering with Excellent Graduate honor from <a href="https://en.tongji.edu.cn/">Tongji University</a> in 2018.</p>
+            </div>
+            <br>
+            <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.ce.cit.tum.de/cps/members/yuanfei-lin-msc/">TUM Page</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?user=FZwqkmkAAAAJ&hl=en&oi=sra">Google Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/yuanfei-lin-6a2791171">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/yuanfei-lin">Github</a>
+            <br><br>
+            yuanfei dot lin dot at tum dot com
+            <br><br>
+          </p>
+        </div>
+        <div id="intro-image">
+          <img src="images/profile.jpg">
+        </div>
+      </div>
+
+      <div id="filters" class="button-group">
+        <!-- <button class="button" data-filter="*">Show All</button> -->
+        <button class="button is-checked" data-filter=".highlight">Highlights</button>
+        <button class="button" data-filter=".publication">Research</button>
+        <button class="button" data-filter=".talk">Talks</button>
+        <button class="button" data-filter=".misc">Misc</button>
+      </div>
+
+      <div class="grid">
+
+        <!-- Highlights -->
+        <div class="list-item highlight description" data-category="highlight">
+          Some recent highlights from our research:
+        </div>
+
+        <!-- Preview Videos -->
+        <div class="list-item highlight previews" data-category="highlight">
+
+	    <a href="https://mediatum.ub.tum.de/doc/1740269/h9fhalm4tfqbb9abjpd33gwpc.pdf">
+		<img src='images/cr2aw.gif' height="200">
+	    </a>
+
+            <a href="https://commonroad.github.io/drplanner/.pdf">
+		<img src='images/drplanner.gif' height="200">
+	    </a>
+
+            <a href="https://commonroad.in.tum.de/tools/commonroad-crime">
+		<img src='images/crime-after.gif' height="200">
+	    </a>
+
+        </div>
+
+        <!-- Truncated Set of Highlights (Shown by Default) -->
+        <div id="main-highlights">
+
+          <div class="list-item highlight" data-category="highlight">
+            <b>CACC</b> <a href="https://youtu.be/N4aEfwRRvMo?si=7iFrh40KPeF37E2x">Real-World Demonstration of Cooperative Platooning</a>
+          </div>
+
+        </div>
+
+        <!-- All Archived Highlights (Click to Show) -->
+        <div id="more-highlights" style="display: None">
+
+          <div class="list-item highlight" data-category="highlight">
+            <p class="date">2024</p>CACC <a href="https://youtu.be/N4aEfwRRvMo?si=7iFrh40KPeF37E2x">Real-World Demonstration of Cooperative Platooning</a>
+          </div>
+
+
+
+        </div>
+
+        <!-- Toggle highlights button. -->
+        <div class="list-item highlight toggle-button" data-category="highlight">
+          <a id="toggle_highlights_button" href="javascript:toggle_highlights()">Show more</a>
+        </div>
+
+
+
+
+        <!-- Publications -->
+        <div class="list-item publication" data-category="publication">
+          <a href="https://mediatum.ub.tum.de/doc/1740269/h9fhalm4tfqbb9abjpd33gwpc.pdf" class="thumbnail">
+            <img src="images/cr2aw.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://mediatum.ub.tum.de/doc/1740269/h9fhalm4tfqbb9abjpd33gwpc.pdf">Simplifying Sim-to-Real Transfer in Autonomous Driving: Coupling Autoware with the CommonRoad Motion Planning Framework</a></h3>
+            <p>
+              <a href="https://www.ce.cit.tum.de/cps/members/gerald-wuersching-msc/">Gerald Würsching</a>,
 	      <a href="https://www.ce.cit.tum.de/cps/members/tobias-mascetta-msc/">Tobias Mascetta</a>,
               <strong>Yuanfei Lin</strong>,
-              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
-              <br>
+              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.<br>
               <em>IV</em>, 2024
               <br>
               <a href="https://mediatum.ub.tum.de/export/1740269/bibtex">BibTex</a>              
@@ -86,41 +137,25 @@
 	      <a href="https://www.youtube.com/watch?v=Jfp7YR6NYRo">Video</a>
               <p></p>
               <p>The first publicly available interface between CommonRoad and Autoware.</p>
-            </td>
-          </tr> 
-	<tr onmouseout="drplanner_stop()" onmouseover="drplanner_start()">
-	   <td style="padding:20px;width:25%;vertical-align:center">
-              <div class="one">
-                <div class="two" id='drplanner_img'>
-                  <img src='images/drplanner-before.gif' width="160"></div>
-                <img src='images/drplanner-after.gif' width="160">
-              </div>
-              <script type="text/javascript">
-                function drplanner_start() {
-                  document.getElementById('drplanner_img').style.opacity = "1";
-                }
+          </div>
+        </div>
 
-                function drplanner_stop() {
-                  document.getElementById('drplanner_img').style.opacity = "0";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:center">
-	      <a href="https://arxiv.org/abs/2403.07470">
-	       <strong><span class="papertitle">DrPlanner 🩺: Diagnosis and Repair of Motion Planners Using Large Language Models</span></strong>
-              </a>
-              <br>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://arxiv.org/abs/2403.07470" class="thumbnail">
+           <img src="images/drplanner.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/abs/2403.07470">DrPlanner 🩺: Diagnosis and Repair of Motion Planners Using Large Language Models</a></h3>
+            <p>
               <strong>Yuanfei Lin</strong>,
 	      <a href="https://scholar.google.com/citations?user=O_PbKNMAAAAJ&hl=zh-CN">Chenran Li</a>,
               <a href="https://dingmyu.github.io">Mingyu Ding</a>,
 	      <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Masayoshi Tomizuka</a>,
               <a href="https://zhanwei.site/">Wei Zhan</a>,
-              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
-              <br>
+              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.<br>            
               <em>ArXiv</em>, 2024
               <br>
-		<a href="https://commonroad.github.io/drplanner/">Project Page</a>
+                <a href="https://commonroad.github.io/drplanner/">Project Page</a>
               /
 		    <a href="https://mediatum.ub.tum.de/export/1737686/bibtex">BibTex</a> 
 		    /
@@ -130,39 +165,22 @@
               <p></p>
               <p>Leveraging the profound capabilities of large language models in addressing reasoning challenges,
 		      we returns repaired planners with detailed diagnostic descriptions. </p>
-            </td>
-          </tr> 
-		
-	<tr onmouseout="mpr_stop()" onmouseover="mpr_start()">
-	   <td style="padding:20px;width:25%;vertical-align:center">
-              <div class="one">
-                <div class="two" id='mpr_img'>
-                  <img src='images/mpr-before.png' width="160"></div>
-                <img src='images/mpr-after.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function mpr_start() {
-                  document.getElementById('mpr_img').style.opacity = "1";
-                }
+          </div>
+        </div>
 
-                function mpr_stop() {
-                  document.getElementById('mpr_img').style.opacity = "0";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:center">
-		<a href="https://doi.org/10.1109/LRA.2023.3324582">
-	       <strong><span class="papertitle">Model Predictive Robustness of Signal Temporal Logic Predicates</span></strong>
-              </a>
-              <br>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://doi.org/10.1109/LRA.2023.3324582" class="thumbnail">
+            <img src="images/mpr.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://mediatum.ub.tum.de/export/1724410/bibtex">Model Predictive Robustness of Signal Temporal Logic Predicates</a></h3>
+            <p>
               <strong>Yuanfei Lin*</strong>,
               <a href="https://niessnerlab.org/members/haoxuan_li/profile.html">Haoxuan Li*</a>,
-              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
-              <br>
+              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.<br>
               <em>RA-L</em>, 2023 & <em>ICRA</em>, 2024
               <br>
-		<a href="https://mediatum.ub.tum.de/export/1724410/bibtex">BibTex</a>
+                <a href="https://mediatum.ub.tum.de/export/1724410/bibtex">BibTex</a>
               /
               <a href="https://mediatum.ub.tum.de/doc/1724410/8n98i8q2eutdgxraxo0le7wwe.ral-final-submission-copyright.pdf">VollText</a>
 	      /
@@ -170,37 +188,20 @@
               <p></p>
               <p>A novel approach to determine the robustness of
 signal temporal logic predicates, where the model capability for rule compliance is explicitly considered.</p>
-            </td>
-          </tr> 
-		
-          <tr onmouseout="converter_stop()" onmouseover="converter_start()">
-	   <td style="padding:20px;width:25%;vertical-align:center">
-              <div class="one">
-                <div class="two" id='converter_img'>
-                  <img src='images/openscenario.png' width="160"></div>
-                <img src='images/commonroad.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function converter_start() {
-                  document.getElementById('converter_img').style.opacity = "1";
-                }
+          </div>
+        </div>
 
-                function converter_stop() {
-                  document.getElementById('converter_img').style.opacity = "0";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:center">
-	      <a href="https://arxiv.org/pdf/2305.10080.pdf">
-	       <strong><span class="papertitle">Automatic Traffic Scenario Conversion from OpenSCENARIO to CommonRoad</span></strong>
-              </a>
-              <br>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://arxiv.org/pdf/2305.10080.pdf" class="thumbnail">
+           <img src="images/openscenario.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://arxiv.org/pdf/2305.10080.pdf">Automatic Traffic Scenario Conversion from OpenSCENARIO to CommonRoad</a></h3>
+            <p>
               <strong>Yuanfei Lin</strong>,
               <a">Michael Ratzel</a>,
-              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
-              <br>
-              <em>ITSC</em>, 2023
+              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.<br>
+                <em>ITSC</em>, 2023
               <br>
 		    <a href="https://mediatum.ub.tum.de/export/1716501/bibtex">BibTex</a>
               /
@@ -213,36 +214,19 @@ signal temporal logic predicates, where the model capability for rule compliance
               <a href="https://commonroad.in.tum.de/tools/openscenario-converter">Tool Page</a>
               <p></p>
               <p>The first openly accessible converter from OpenSCENARIO to CommonRoad.</p>
-            </td>
-          </tr> 
-													   
-          <tr onmouseout="crime_stop()" onmouseover="crime_start()">
-	   <td style="padding:20px;width:25%;vertical-align:center">
-              <div class="one">
-                <div class="two" id='crime_img'>
-                  <img src='images/crime-before.jpg' width="160"></div>
-                <img src='images/crime-after.gif' width="160">
-              </div>
-              <script type="text/javascript">
-                function crime_start() {
-                  document.getElementById('crime_img').style.opacity = "0";
-                }
+          </div>
+        </div>
 
-                function crime_stop() {
-                  document.getElementById('crime_img').style.opacity = "1";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:center">
-	      <a href="https://commonroad.in.tum.de/tools/commonroad-crime">
-	       <strong><span class="papertitle">CommonRoad-CriMe: A Toolbox for Criticality Measures of Autonomous Vehicles</span></strong>
-              </a>
-              <br>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://commonroad.in.tum.de/tools/commonroad-crime" class="thumbnail">
+              <img src="images/crime-after.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://commonroad.in.tum.de/tools/commonroad-crime">CommonRoad-CriMe: A Toolbox for Criticality Measures of Autonomous Vehicles</a></h3>
+            <p>
               <strong>Yuanfei Lin</strong>,
-              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
-              <br>
-              <em>IV</em>, 2023
+              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.<br>
+                <em>IV</em>, 2023
               <br>
               <a href="https://mediatum.ub.tum.de/export/1706306/bibtex">BibTex</a>              
 		    /
@@ -253,36 +237,19 @@ signal temporal logic predicates, where the model capability for rule compliance
               <a href="https://commonroad.in.tum.de/tools/commonroad-crime">Tool Page</a>
               <p></p>
               <p>An open-source toolbox for measuring the criticality of autonomous vehicles in a unified framework.</p>
-            </td>
-          </tr> 
-			
-          <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
-            <td style="padding:20px;width:25%;vertical-align:center">
-              <div class="one">
-                <div class="two" id='rule_repair'>
-                  <img src='images/rule_rep2.png' width="160"></div>
-                <img src='images/rule_rep1.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfactor_start() {
-                  document.getElementById('rule_repair').style.opacity = "1";
-                }
+          </div>
+        </div>
 
-                function nerfactor_stop() {
-                  document.getElementById('rule_repair').style.opacity = "0";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:center">
-	      <a href="https://mediatum.ub.tum.de/doc/1657306">
-	       <strong><span class="papertitle">Rule-Compliant Trajectory Repairing using Satisfiability Modulo Theories</span></strong>
-              </a>
-              <br>
+        <div class="list-item publication" data-category="publication">
+          <a href="https://mediatum.ub.tum.de/doc/1657306" class="thumbnail">
+              <img src="images/rule_repair.gif" alt="" />
+          </a>
+          <div class="project-description">
+            <h3><a href="https://mediatum.ub.tum.de/doc/1657306">Rule-Compliant Trajectory Repairing using Satisfiability Modulo Theories</a></h3>
+            <p>
               <strong>Yuanfei Lin</strong>,
-              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
-              <br>
-              <em>IV</em>, 2022
+              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.<br>
+                <em>IV</em>, 2022
               <br>
               <a href="https://mediatum.ub.tum.de/export/1657306/bibtex">BibTex</a>
               /
@@ -293,208 +260,177 @@ signal temporal logic predicates, where the model capability for rule compliance
               <a href="data/iv22-poster.pdf">Poster</a>
               <p></p>
               <p>The first work to repair trajectories violating traffic rules formalized in temporal logic.</p>
-            </td>
-          </tr> 
-            
-          <tr onmouseout="asap_stop()" onmouseover="asap_start()">
-	   <td style="padding:20px;width:25%;vertical-align:center">
-              <div class="one">
-                <div class="two" id='repair_image'>
-                  <img src='images/repair_before.png' width="160"></div>
-                <img src='images/repair_after.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function asap_start() {
-                  document.getElementById('repair_image').style.opacity = "1";
-                }
-
-                function asap_stop() {
-                  document.getElementById('repair_image').style.opacity = "0";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-	   	<a href="https://mediatum.ub.tum.de/doc/1616802/1616802.pdf">
-	       <strong><span class="papertitle">Sampling-Based Trajectory Repairing for Autonomous Vehicles</span></strong>
-              </a>
-              <br>
-              <strong>Yuanfei Lin</strong>,
-              <a href="https://www.ce.cit.tum.de/cps/members/sebastian-maierhofer-msc/">Sebastian Maierhofer</a>,
-              <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.
-              <br>
-              <em>ITSC</em>, 2021 
-              <br>
-              <a href="https://mediatum.ub.tum.de/export/1616802/bibtex">BibTex</a>
-              /
-              <a href="https://mediatum.ub.tum.de/doc/1616802/1616802.pdf">VollText</a>
-              /
-              <a href="https://mediatum.ub.tum.de/doc/1616802/1616802.pdf">Video</a>
-              <p></p>
-              <p>As replanning would be computationally expensive, we present a novel approach for repairing invalid trajectorie.</p>
-            </td>
-          </tr> 
-	 </table>   						  
-							 
-        <!-- XXX: talk -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Invited Talk</heading>
-            </td>
-          </tr>
-        </table>   
-
-	 <table width="100%" cellpadding="10" border="0" align="center">
-          <tbody>
-            <tr>
-              <td width="25%" align="center">
-                <img src="images/iv2023.png" alt="iv" width="120">
-              </td>
-              <td width="75%" valign="center">
-		<em>Reliable-by-Repair: Trajectory Repairing for Autonomous Vehicles with Rule Compliance</em>
-		<p>
-		<a href="https://sites.google.com/view/iv2023-social">Social, interactive and safe behaviors for AVs: benchmarks, models and applications</a>
-                <br> 
-			IEEE IV 2023 Workshops, Anchorage, AK, United States</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>    
-            
-         <table width="100%" cellpadding="10" border="0" align="center">
-          <tbody>
-            <tr>
-              <td width="25%" align="center">
-                <img src="images/seu.png" alt="tum" width="120">
-              </td>
-              <td width="75%" valign="center">
-		<em>Trajectory Repairing for Autonomous Vehicles: Collision Avoidance and Rule Compliance</em>
-                <p>School of Cyber Science and Engineering, Southeast University, China (online)</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>    
-														      
-        <!-- XXX: teaching -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Teaching</heading>
-            </td>
-          </tr>
-        </table>   
-            
-         <table width="100%" cellpadding="10" border="0" align="center">
-          <tbody>
-            <tr>
-              <td width="25%" align="center">
-                <img src="images/tum.png" alt="tum" width="120">
-              </td>
-              <td width="75%" valign="top">
-		<a href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950630606&pSpracheNr=2">2022-2023: Techniques in Artificial Intelligence</a><br>			  
-		<a href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950632172&pSpracheNr=2">2021-now: Motion Planning for Autonomous Vehicles</a><br>
-		<a href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950633542&pSpracheNr=2">2021-now: Seminar of Cyber-Physical Systems</a><br>
-                <a href="https://www.mw.tum.de/en/rt/study-teaching/lectures/moderne-methoden-der-regelungstechnik-1/">2020: Advanced Control 1</a>
-                <p>Teaching Assistant, Technical University of Munich, Germany</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-            
-        <!-- XXX: education -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Education</heading>
-            </td>
-          </tr>
-        </table>   
-
-        <table width="100%" cellpadding="10" border="0" align="center">
-          <tbody>
-            <tr>
-              <td width="25%" align="center">
-                <img src="images/ucb-logo.png" alt="tum" width="120">
-              </td>
-              <td width="75%" valign="top">
-                <p>
-                  <strong>Aug. 2023 - Feb. 2024</strong>, Mechanical Systems Control Lab, <i><strong>University of California, Berkeley</strong></i>, USA
-                </p>
-                <p>Visiting Scholar<br>
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-	      
-        <table width="100%" cellpadding="10" border="0" align="center">
-          <tbody>
-            <tr>
-              <td width="25%" align="center">
-                <img src="images/tum.png" alt="tum" width="120">
-              </td>
-              <td width="75%" valign="top">
-                <p>
-                  <strong>Since May. 2021</strong>, Department of Informatics, <i><strong>Technical University of Munich</strong></i>, Germany
-                </p>
-                <p>Ph.D. in Informatics<br>
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-
-        <table width="100%" cellpadding="10" border="0" align="center">
-          <tbody>
-            <tr>
-              <td width="25%" align="center">
-                <img src="images/tum.png" alt="tum" width="120">
-              </td>
-              <td width="75%" valign="top">
-                <p>
-                  <strong>Sept. 2018 - Dec. 2020</strong>, Department of Mechanical Engineering, <i><strong>Technical University of Munich</strong></i>, Germany
-                </p>
-                <p>M. Sc. w/ high distinction in Mechanical Engineering and Mechatronics and Robotics
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table width="100%" cellpadding="10" border="0" align="center">
-          <tbody>
-            <tr>
-              <td width="25%" align="center">
-                <img src="images/tongji.png" alt="tongji" width="100">
-              </td>
-              <td width="75%" valign="top">
-                <p>
-                  <strong>Sept. 2013 - Jul. 2018</strong>, School of Automotive Studies, <i><strong>Tongji University</strong></i>, China
-                </p>
-                <p>B. Eng. in Automotive Engineering<br>
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <!-- line break -->
-        <hr>
-        <!-- statistik -->
-        <body>
-            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=VJ42lfuG67dpSVfBCE9KFlEeemorD2AyFzxuNdS0GVM&cl=ffffff&w=300"></script>
-        </body>
-        <!-- footer -->
-        <div class="container">
-          <p align="right">
-            &nbsp;&nbsp;&nbsp;Updated March 2024</p>
-          <p></p>
-          <p align="right">
-            <a href="https://jonbarron.info/">Source</a>
-          </p>
+          </div>
         </div>
-</body>
 
+<div class="list-item publication" data-category="publication">
+    <a href="https://mediatum.ub.tum.de/doc/1616802/1616802.pdf" class="thumbnail">
+        <img src="images/repair_col.gif" alt="" />
+    </a>
+    <div class="project-description">
+        <h3>
+            <a href="https://mediatum.ub.tum.de/doc/1616802/1616802.pdf">Sampling-Based Trajectory Repairing for Autonomous Vehicles</a>
+        </h3>
+        <p>
+            <strong>Yuanfei Lin</strong>,
+            <a href="https://www.ce.cit.tum.de/cps/members/sebastian-maierhofer-msc/">Sebastian Maierhofer</a>,
+            <a href="https://www.ce.cit.tum.de/cps/members/prof-dr-ing-matthias-althoff/">Matthias Althoff</a>.<br>
+            <em>ITSC</em>, 2021
+        </p>
+        <p>
+            <a href="https://mediatum.ub.tum.de/export/1616802/bibtex">BibTex</a> /
+            <a href="https://mediatum.ub.tum.de/doc/1616802/1616802.pdf">Full Text</a> /
+            <a href="https://mediatum.ub.tum.de/doc/1616802/1616802.pdf">Video</a>
+        </p>
+        <p>As replanning would be computationally expensive, we present a novel approach for repairing invalid trajectories.</p>
+    </div>
+</div>
+
+        <!-- Talks -->
+        <!-- <div class="list-item talk description" data-category="talk">
+          Some of my slides can be found <a href="https://slides.com/andyzeng">here</a>
+        </div> -->
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2024</p>Shanghai Jiao Tong University, <a href="https://english.seiee.sjtu.edu.cn/english/list/922-1-20.htm">Department of Automation</a>
+        </div>
+        
+        <div class="list-item talk" data-category="talk">
+          <p class="date"></p>IEEE ICRA 2024 Workshops on <a href="https://sites.google.com/lehigh.edu/fmr-icra2024">How to ensure correct robot behaviors?</a>
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2023</p>IEEE IV 2023 Workshops: <a href="https://sites.google.com/view/iv2023-social">Social, interactive and safe behaviors for AVs: benchmarks, models and applications</a>
+        </div>
+
+        <div class="list-item talk" data-category="talk">
+          <p class="date">2022</p>Southeast University, <a href="https://cyber.seu.edu.cn/wa_en/">School of Cyber Science and Engineering</a>
+        </div>
+
+        <!-- Services -->
+        
+         <div class="list-item misc" data-category="misc">
+          <p class="date">2024</p>Visiting Scholar, <a href="https://msc.berkeley.edu/"> Mechanical Systems Control Lab</a>, UC Berkeley
+        </div>
+        
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2022+</p>Reviewer, RA-L, T-ITS, ICRA, CDC, ITSC, IV, IROS
+        </div>
+        
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2020</p>Graduation Scholarship Awarded by TUM
+        </div>
+        
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2019</p>German National Scholarship
+        </div>
+	
+	<div class="list-item misc" data-category="misc">
+          <p class="date">2018</p>Excellent Graduates of Shanghai, China
+        </div>
+        
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2017</p>Tongji Scholarship of Excellence
+        </div>
+        
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2016</p>National Scholarship in China
+        </div>
+	
+	<div class="list-item misc" data-category="misc">
+          <p class="date">2015</p>Shanghai Scholarship, China
+        </div>
+        
+        <div class="list-item misc" data-category="misc">
+          <p class="date">2014</p>National Scholarship in China
+        </div>
+
+        <div id="footer">This website is inspired by <a href="https://andyzeng.github.io/">Andy Zeng's website</a> which in turn was inspired by <a href="https://jonbarron.info/">Jon's website</a>.</div>
+
+    </div>
+
+    <script>
+
+      // Isotope grid.
+      var $grid = $('.grid').isotope({
+        itemSelector: '.list-item',
+        layoutMode: 'fitRows',
+        transitionDuration: 0,
+        stagger: 10,
+        initLayout: false,
+        getSortData: {
+          name: '.name',
+          symbol: '.symbol',
+          number: '.number parseInt',
+          category: '[data-category]',
+          weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+          }
+        }
+      });
+
+      // Bind filter button click.
+      $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        localStorage.setItem('filterValue', filterValue);
+        $grid.isotope({ filter: filterValue });
+      });
+
+      // Change is-checked class on buttons.
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+
+      function update_isotope() {
+        // Retrieve cached button click.
+        var defaultFilterValue = localStorage.getItem('filterValue');
+        if (defaultFilterValue == null) {
+          defaultFilterValue = ".highlight"
+        }
+        $grid.isotope({ filter: defaultFilterValue });
+        var buttons = document.getElementsByClassName("button");
+        for (var currButton of buttons) {
+          if (currButton.getAttribute('data-filter') == defaultFilterValue) {
+            currButton.classList.add('is-checked');
+          } else {
+            currButton.classList.remove('is-checked');
+          }
+        }
+      }
+
+      function toggle_bio() {
+        var x = document.getElementById("more-bio");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function toggle_highlights() {
+        var x = document.getElementById("main-highlights");
+        var y = document.getElementById("more-highlights");
+        var b = document.getElementById("toggle_highlights_button")
+        if (y.style.display === "none") {
+          x.style.display = "none";
+          y.style.display = "block";
+          b.innerHTML = "Show less"
+          update_isotope();
+        } else {
+          x.style.display = "block";
+          y.style.display = "none";
+          b.innerHTML = "Show more"
+          update_isotope();
+        }
+      }
+
+      update_isotope();
+
+    </script>
+  </body>
 </html>
